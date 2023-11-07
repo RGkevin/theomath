@@ -1,6 +1,6 @@
 {
   "name": "@theomath/source",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "build": "nx build",
@@ -32,5 +32,9 @@
   },
   "type": "commonjs",
   "main": "./src/index.js",
-  "typings": "./src/index.d.ts"
+  "typings": "./src/index.d.ts",
+  "author": {
+    "email": "rgkevin.lopez@gmail.com",
+    "name": "Kevin López"
+  }
 }

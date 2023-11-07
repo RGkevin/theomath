@@ -15,7 +15,9 @@
     "baseUrl": ".",
     "paths": {
       "@theomath/source": ["src/index.ts"]
-    }
+    },
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
   "files": [],
   "include": [],
