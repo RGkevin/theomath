@@ -4,6 +4,15 @@
   "sourceRoot": "src",
   "projectType": "library",
   "targets": {
+    "test:watch": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "coverage/theomath",
+        "watch": true
+      }
+    },
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
@@ -27,6 +36,15 @@
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "coverage/theomath"
+      }
+    },
+    "test:coverage": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "coverage/theomath",
+        "coverage": true
       }
     }
   },

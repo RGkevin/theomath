@@ -1,10 +1,11 @@
 {
   "name": "@theomath/source",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "license": "MIT",
   "scripts": {
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "serve": "nx test:watch"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -21,6 +22,7 @@
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "@vitest/coverage-c8": "~0.32.0",
+    "@vitest/coverage-v8": "^0.34.6",
     "@vitest/ui": "~0.32.0",
     "eslint": "~8.46.0",
     "eslint-config-prettier": "^9.0.0",
