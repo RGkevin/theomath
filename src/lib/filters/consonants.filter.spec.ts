@@ -1,4 +1,4 @@
-import { consonantsFilter } from './consonants.filter';
+import { consonantsFilter } from '@theomath/source';
 
 describe('', () => {
   it('should filter out the vowels', () => {
