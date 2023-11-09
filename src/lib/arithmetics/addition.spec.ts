@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { addition } from './addition';
 
-describe('Theosophical arithmetics - Addition', () => {
+describe('Theosophical arithmetic', () => {
   it('should get theosophical additions for given number', () => {
     const num = 56;
     const sums = addition([num]);

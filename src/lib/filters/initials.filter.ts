@@ -1,5 +1,5 @@
 import { BirthStamp } from '../types';
-import { useParentInitials } from './parent.initials';
+import { useParentInitials } from '../utils';
 
 /**
  * Returns the initials of the Birth Stamp
@@ -7,7 +7,7 @@ import { useParentInitials } from './parent.initials';
  * @param father
  * @param mother
  */
-export const useInitials = ({
+export const initialsFilter = ({
   names,
   father,
   mother,

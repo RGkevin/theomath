@@ -3,7 +3,7 @@ import { specials } from '../dictionaries/base9.dictionary.json';
 export const addition = (sums: number[], checkSpecial = false): number[] => {
   const lastSum = sums.at(-1);
   if (checkSpecial && specials.includes(lastSum)) {
-    console.info(`[theosophical.addition] FOUND Special ${lastSum}`);
+    // found special
     return sums;
   }
 

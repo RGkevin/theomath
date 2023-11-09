@@ -1,6 +1,6 @@
 import { describe } from 'vitest';
 import { BirthStamp } from '../types';
-import { useInitials } from '@theomath/source';
+import { initialsFilter } from '@theomath/source';
 
 describe('Initials operation', () => {
   it('should get the initials for the given birth stamp', () => {
@@ -14,7 +14,7 @@ describe('Initials operation', () => {
       },
       date: new Date(),
     };
-    const result = useInitials(birthStamp);
+    const result = initialsFilter(birthStamp);
     expect(result).to.have.all.members(['K', 'E', 'L', 'V']);
   });
 });
