@@ -5,6 +5,7 @@ import { expression } from '@theomath/source';
 describe('Get the Expression of a Birth Stamp', () => {
   it('should get the expression values for the given birth stamp', () => {
     const birthStamp: BirthStamp = {
+      timeZone: 'America/Guatemala',
       names: ['Kevin', 'Eduardo'],
       father: {
         firstLastName: 'López',

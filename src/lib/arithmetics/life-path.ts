@@ -1,6 +1,7 @@
 import { BirthStamp } from '../types';
 import { addition } from './addition';
 import { sumAll } from './sum-all';
+import { datetimeFormatConverter } from '../converters';
 
 /**
  * Life Path
@@ -8,16 +9,11 @@ import { sumAll } from './sum-all';
  * It uses the timezone of the date
  */
 export const lifePath = ({ date, timeZone }: BirthStamp): number[] => {
-  const formattedPart = new Intl.DateTimeFormat([], {
-    timeZone,
-  }).formatToParts(date);
-  const partsValues = formattedPart.reduce((prev, curr) => {
-    return { ...prev, [curr.type]: curr.value };
-  }, {});
+  const partsObj = datetimeFormatConverter(date, timeZone);
 
-  const day = parseInt(partsValues['day'], 10);
-  const month = parseInt(partsValues['month'], 10);
-  const year = parseInt(partsValues['year'], 10);
+  const day = parseInt(partsObj['day'], 10);
+  const month = parseInt(partsObj['month'], 10);
+  const year = parseInt(partsObj['year'], 10);
   const sumOfAll = sumAll([day, month, year]);
 
   return addition([sumOfAll]);
