@@ -10,4 +10,9 @@ describe('Char Converter', () => {
     expect(result).eq(5);
     expect(result2).eq(6);
   });
+  it('should should not convert a char to its numerological value', () => {
+    const char = '$';
+    const result2 = charConverter(char);
+    expect(result2).eq(null);
+  });
 });

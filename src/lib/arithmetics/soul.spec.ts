@@ -45,4 +45,34 @@ describe('soul operation', () => {
 
     expect(result).to.have.all.members([35, 8]);
   });
+
+  it('should calculate the soul number from Birth Stamp without father and mother', () => {
+    const birthStamp: BirthStamp = {
+      timeZone: 'America/Guatemala',
+      date: new Date(),
+      names: ['Kevin', 'Eduardo'],
+    };
+    const result = soul(birthStamp);
+
+    expect(result).to.have.all.members([29, 11, 2]);
+  });
+
+  it('should calculate the soul number from Birth Stamp with full father and mother last names', () => {
+    const birthStamp: BirthStamp = {
+      timeZone: 'America/Guatemala',
+      date: new Date(),
+      names: ['Kevin', 'Eduardo'],
+      mother: {
+        firstLastName: 'Valle',
+        secondLastName: 'Hernandez',
+      },
+      father: {
+        firstLastName: 'López',
+        secondLastName: 'López',
+      },
+    };
+    const result = soul(birthStamp);
+
+    expect(result).to.have.all.members([68, 14, 5]);
+  });
 });

@@ -16,9 +16,6 @@ export const charConverter = (
 
   const foundIdx = base9Dic.letters.indexOf(cleanedChart);
   if (foundIdx === -1) {
-    console.warn(
-      `[charConverter] could not find char: "${char}" in base9Dictionary`
-    );
     return null;
   }
 

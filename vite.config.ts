@@ -24,6 +24,7 @@ export default defineConfig({
       functions: 100,
       branches: 100,
       statements: 8,
+      exclude: ['src/lib/types', 'coverage'],
     },
   },
 });
