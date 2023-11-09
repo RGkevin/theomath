@@ -3,7 +3,7 @@ import { lettersConverter } from '../converters';
 
 /**
  * Expression
- * Sum of all he vowels and consonants of the Birth Stamp
+ * Sum of all the vowels and consonants of the Birth Stamp
  */
 export const expression = ({ names, father, mother }: BirthStamp): number[] => {
   let fullName = names.join(' ');
