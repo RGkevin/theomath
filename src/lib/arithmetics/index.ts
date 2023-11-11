@@ -10,3 +10,4 @@ export * from './soul';
 export * from './strength';
 export * from './sum-all.vowels';
 export * from './sum-all.consonants';
+export * from './addition';
