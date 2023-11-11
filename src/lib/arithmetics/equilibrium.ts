@@ -1,7 +1,7 @@
 import { BirthStamp } from '../types';
 import { charConverter } from '../converters';
 import { sumAll } from './sum-all';
-import { addition } from './addition';
+import { reduction } from './reduction';
 import { initialsFilter } from '../filters';
 
 /**
@@ -13,5 +13,5 @@ export const equilibrium = (birthStamp: BirthStamp): number[] | null => {
   const initialsValues = initials.map((char) => charConverter(char));
   const sumOfInitials = sumAll(initialsValues);
 
-  return addition([sumOfInitials]);
+  return reduction([sumOfInitials]);
 };

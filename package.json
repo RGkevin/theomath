@@ -1,6 +1,6 @@
 {
-  "name": "@theomath/source",
-  "version": "1.0.0",
+  "name": "theomath",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "build": "nx build",

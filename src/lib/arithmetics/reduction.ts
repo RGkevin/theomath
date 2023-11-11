@@ -1,6 +1,6 @@
 import { specials } from '../dictionaries/base9.dictionary.json';
 
-export const addition = (sums: number[], checkSpecial = false): number[] => {
+export const reduction = (sums: number[], checkSpecial = false): number[] => {
   const lastSum = sums.at(-1);
   if (checkSpecial && specials.includes(lastSum)) {
     // found special
@@ -16,5 +16,5 @@ export const addition = (sums: number[], checkSpecial = false): number[] => {
     .map((numAsString) => Number.parseInt(numAsString, 10))
     .reduce((prev, curr) => prev + curr, 0);
 
-  return addition([...sums, sum], checkSpecial);
+  return reduction([...sums, sum], checkSpecial);
 };

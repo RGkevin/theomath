@@ -1,4 +1,4 @@
-import { addition, sumAll } from '../arithmetics';
+import { reduction, sumAll } from '../arithmetics';
 import { wordConverter } from './word.converter';
 
 export const lettersConverter = (letters: string): number[] => {
@@ -6,5 +6,5 @@ export const lettersConverter = (letters: string): number[] => {
   const wordsValues = words.map(wordConverter).map(sumAll);
   const wordsValuesSum = sumAll(wordsValues);
 
-  return addition([wordsValuesSum]);
+  return reduction([wordsValuesSum]);
 };

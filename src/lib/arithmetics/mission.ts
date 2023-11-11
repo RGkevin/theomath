@@ -1,7 +1,7 @@
 import { BirthStamp } from '../types';
 import { lifePath } from './life-path';
 import { expression } from './expression';
-import { addition } from './addition';
+import { reduction } from './reduction';
 
 /**
  * Cosmic Mission:
@@ -12,5 +12,5 @@ export const cosmicMission = (birthStamp: BirthStamp) => {
   const expressionValue = expression(birthStamp);
   const sumOfBoth = lifePathValue.at(0) + expressionValue.at(0);
 
-  return addition([sumOfBoth]);
+  return reduction([sumOfBoth]);
 };

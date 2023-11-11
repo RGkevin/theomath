@@ -2,7 +2,7 @@ import { cosmicMission } from './mission';
 import { BirthStamp } from '../types';
 import { soul } from './soul';
 import { datetimeFormatConverter } from '../converters';
-import { addition } from './addition';
+import { reduction } from './reduction';
 import { sumAll } from './sum-all';
 
 /**
@@ -19,5 +19,5 @@ export const initiation = (birthStamp: BirthStamp) => {
   const day = parseInt(partsObj['day'], 10);
   const sumOfAll = sumAll([cosmicMissionValue.at(0), soulNumber.at(0), day]);
 
-  return addition([sumOfAll]);
+  return reduction([sumOfAll]);
 };

@@ -1,6 +1,6 @@
 import { BirthStamp } from '../types';
 import { sumAllConsonants } from './sum-all.consonants';
-import { addition } from './addition';
+import { reduction } from './reduction';
 import { sumAll } from './sum-all';
 
 /**
@@ -33,5 +33,5 @@ export const personality = ({
     ...sumAllConsonants(motherLastNames)
   );
 
-  return addition([sumAll(namesValues)]);
+  return reduction([sumAll(namesValues)]);
 };

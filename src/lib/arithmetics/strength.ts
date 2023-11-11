@@ -1,6 +1,6 @@
 import { BirthStamp } from '../types';
 import { datetimeFormatConverter } from '../converters';
-import { addition } from './addition';
+import { reduction } from './reduction';
 
 /**
  * Strength Number:
@@ -16,5 +16,5 @@ export const strength = (birthStamp: BirthStamp) => {
     Number.parseInt(datePartsObj['month'], 10),
   ];
 
-  return addition([day + month]);
+  return reduction([day + month]);
 };

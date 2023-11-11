@@ -1,5 +1,5 @@
 import { BirthStamp } from '../types';
-import { addition } from './addition';
+import { reduction } from './reduction';
 import { sumAll } from './sum-all';
 import { datetimeFormatConverter } from '../converters';
 
@@ -16,5 +16,5 @@ export const lifePath = ({ date, timeZone }: BirthStamp): number[] => {
   const year = parseInt(partsObj['year'], 10);
   const sumOfAll = sumAll([day, month, year]);
 
-  return addition([sumOfAll]);
+  return reduction([sumOfAll]);
 };

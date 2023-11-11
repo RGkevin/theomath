@@ -1,5 +1,5 @@
 import { BirthStamp } from '../types';
-import { addition } from './addition';
+import { reduction } from './reduction';
 import { sumAll } from './sum-all';
 import { sumAllVowels } from './sum-all.vowels';
 
@@ -29,5 +29,5 @@ export const soul = ({ names, father, mother }: BirthStamp) => {
     ...sumAllVowels(motherLastNames)
   );
 
-  return addition([sumAll(namesValues)]);
+  return reduction([sumAll(namesValues)]);
 };

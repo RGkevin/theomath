@@ -1,16 +1,16 @@
 import { expect } from 'chai';
-import { addition } from './addition';
+import { reduction } from './reduction';
 
 describe('Theosophical arithmetic', () => {
   it('should get theosophical additions for given number', () => {
     const num = 56;
-    const sums = addition([num]);
+    const sums = reduction([num]);
     expect(sums).to.have.all.members([56, 11, 2]);
   });
 
   it('should get theosophical additions for given number until special', () => {
     const num = 56;
-    const sums = addition([num], true);
+    const sums = reduction([num], true);
     expect(sums).to.have.all.members([56, 11]);
   });
 });

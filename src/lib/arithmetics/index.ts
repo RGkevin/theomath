@@ -1,4 +1,4 @@
-export * from './addition';
+export * from './reduction';
 export * from './sum-all';
 export * from './equilibrium';
 export * from './expression';
