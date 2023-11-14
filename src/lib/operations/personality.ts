@@ -1,7 +1,5 @@
 import { BirthStamp } from '../types'
-import { sumAllConsonants } from '../arithmetics/sum-all.consonants'
-import { reduction } from '../arithmetics/reduction'
-import { sumAll } from '../arithmetics/sum-all'
+import { reduction, sumAll, sumAllConsonants } from '../arithmetics'
 
 /**
  * Personality

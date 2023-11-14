@@ -1,7 +1,7 @@
 import { BirthStamp } from '../types'
 import { lifePath } from './life-path'
 import { expression } from './expression'
-import { reduction } from '../arithmetics/reduction'
+import { reduction } from '../arithmetics'
 
 /**
  * Cosmic Mission:

@@ -1,6 +1,5 @@
 import { BirthStamp } from '../types'
-import { reduction } from '../arithmetics/reduction'
-import { sumAll } from '../arithmetics/sum-all'
+import { reduction, sumAll } from '../arithmetics'
 import { datetimeFormatConverter } from '../converters'
 
 /**

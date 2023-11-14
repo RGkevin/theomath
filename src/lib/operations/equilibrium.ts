@@ -1,7 +1,6 @@
 import { BirthStamp } from '../types'
 import { charConverter } from '../converters'
-import { sumAll } from '../arithmetics/sum-all'
-import { reduction } from '../arithmetics/reduction'
+import { reduction, sumAll } from '../arithmetics'
 import { initialsFilter } from '../filters'
 
 /**

@@ -1,6 +1,6 @@
 import { BirthStamp } from '../types'
 import { datetimeFormatConverter } from '../converters'
-import { reduction } from '../arithmetics/reduction'
+import { reduction } from '../arithmetics'
 
 /**
  * Strength Number:

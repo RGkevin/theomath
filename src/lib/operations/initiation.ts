@@ -2,8 +2,7 @@ import { cosmicMission } from './mission'
 import { BirthStamp } from '../types'
 import { soul } from './soul'
 import { datetimeFormatConverter } from '../converters'
-import { reduction } from '../arithmetics/reduction'
-import { sumAll } from '../arithmetics/sum-all'
+import { reduction, sumAll } from '../arithmetics'
 
 /**
  * Spiritual Initiation:
