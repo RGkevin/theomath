@@ -1,6 +1,6 @@
-import { describe, expect } from 'vitest';
-import { BirthStamp } from '../types';
-import { initialsFilter } from '@theomath/source';
+import { describe, expect } from 'vitest'
+import { BirthStamp } from '../types'
+import { initialsFilter } from '@theomath/source'
 
 describe('Initials operation', () => {
   it('should get the initials for the given birth stamp', () => {
@@ -14,10 +14,10 @@ describe('Initials operation', () => {
       },
       date: new Date(),
       timeZone: 'America/Guatemala',
-    };
-    const result = initialsFilter(birthStamp);
-    expect(result).to.have.all.members(['K', 'E', 'L', 'V']);
-  });
+    }
+    const result = initialsFilter(birthStamp)
+    expect(result).to.have.all.members(['K', 'E', 'L', 'V'])
+  })
   it('should get the initials for the given birth stamp without father', () => {
     const birthStamp: BirthStamp = {
       names: ['Kevin', 'Eduardo'],
@@ -26,10 +26,10 @@ describe('Initials operation', () => {
       },
       date: new Date(),
       timeZone: 'America/Guatemala',
-    };
-    const result = initialsFilter(birthStamp);
-    expect(result).to.have.all.members(['K', 'E', 'V']);
-  });
+    }
+    const result = initialsFilter(birthStamp)
+    expect(result).to.have.all.members(['K', 'E', 'V'])
+  })
   it('should get the initials for the given birth stamp without mother', () => {
     const birthStamp: BirthStamp = {
       names: ['Kevin', 'Eduardo'],
@@ -38,10 +38,10 @@ describe('Initials operation', () => {
       },
       date: new Date(),
       timeZone: 'America/Guatemala',
-    };
-    const result = initialsFilter(birthStamp);
-    expect(result).to.have.all.members(['K', 'E', 'L']);
-  });
+    }
+    const result = initialsFilter(birthStamp)
+    expect(result).to.have.all.members(['K', 'E', 'L'])
+  })
   it('should get the initials for the given birth stamp with full name', () => {
     const birthStamp: BirthStamp = {
       names: ['Kevin', 'Eduardo'],
@@ -55,8 +55,8 @@ describe('Initials operation', () => {
       },
       date: new Date(),
       timeZone: 'America/Guatemala',
-    };
-    const result = initialsFilter(birthStamp);
-    expect(result).to.have.all.members(['K', 'E', 'L', 'L', 'V', 'H']);
-  });
-});
+    }
+    const result = initialsFilter(birthStamp)
+    expect(result).to.have.all.members(['K', 'E', 'L', 'L', 'V', 'H'])
+  })
+})

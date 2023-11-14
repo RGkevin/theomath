@@ -1,6 +1,6 @@
-import { BirthStamp } from '../types';
-import { personality } from '@theomath/source';
-import { expect } from 'vitest';
+import { BirthStamp } from '../types'
+import { personality } from '@theomath/source'
+import { expect } from 'vitest'
 
 describe('Personality operation', () => {
   it('should calculate the personality number from Birth Stamp', () => {
@@ -14,11 +14,11 @@ describe('Personality operation', () => {
       timeZone: 'America/Guatemala',
       date: new Date(),
       names: ['Kevin', 'Eduardo'],
-    };
-    const result = personality(birthStamp);
+    }
+    const result = personality(birthStamp)
 
-    expect(result).to.have.all.members([56, 11, 2]);
-  });
+    expect(result).to.have.all.members([56, 11, 2])
+  })
   it('should calculate the personality number from Birth Stamp without mother', () => {
     const birthStamp: BirthStamp = {
       father: {
@@ -27,11 +27,11 @@ describe('Personality operation', () => {
       timeZone: 'America/Guatemala',
       date: new Date(),
       names: ['Kevin', 'Eduardo'],
-    };
-    const result = personality(birthStamp);
+    }
+    const result = personality(birthStamp)
 
-    expect(result).to.have.all.members([46, 10, 1]);
-  });
+    expect(result).to.have.all.members([46, 10, 1])
+  })
   it('should calculate the personality number from Birth Stamp without father', () => {
     const birthStamp: BirthStamp = {
       mother: {
@@ -40,22 +40,22 @@ describe('Personality operation', () => {
       timeZone: 'America/Guatemala',
       date: new Date(),
       names: ['Kevin', 'Eduardo'],
-    };
-    const result = personality(birthStamp);
+    }
+    const result = personality(birthStamp)
 
-    expect(result).to.have.all.members([38, 11, 2]);
-  });
+    expect(result).to.have.all.members([38, 11, 2])
+  })
 
   it('should calculate the personality number from Birth Stamp without father and mother', () => {
     const birthStamp: BirthStamp = {
       timeZone: 'America/Guatemala',
       date: new Date(),
       names: ['Kevin', 'Eduardo'],
-    };
-    const result = personality(birthStamp);
+    }
+    const result = personality(birthStamp)
 
-    expect(result).to.have.all.members([28, 10, 1]);
-  });
+    expect(result).to.have.all.members([28, 10, 1])
+  })
 
   it('should calculate the personality number from Birth Stamp with full father and mother last names', () => {
     const birthStamp: BirthStamp = {
@@ -70,9 +70,9 @@ describe('Personality operation', () => {
         firstLastName: 'López',
         secondLastName: 'López',
       },
-    };
-    const result = personality(birthStamp);
+    }
+    const result = personality(birthStamp)
 
-    expect(result).to.have.all.members([113, 5]);
-  });
-});
+    expect(result).to.have.all.members([113, 5])
+  })
+})

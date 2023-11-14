@@ -1,20 +1,20 @@
-import { specials } from '../dictionaries/base9.dictionary.json';
+import { specials } from '../dictionaries/base9.dictionary.json'
 
 export const reduction = (sums: number[], checkSpecial = false): number[] => {
-  const lastSum = sums.at(-1);
+  const lastSum = sums.at(-1)
   if (checkSpecial && specials.includes(lastSum)) {
     // found special
-    return sums;
+    return sums
   }
 
-  const asString = lastSum.toString();
+  const asString = lastSum.toString()
   if (asString.length < 2) {
-    return sums;
+    return sums
   }
 
   const sum = [...asString]
     .map((numAsString) => Number.parseInt(numAsString, 10))
-    .reduce((prev, curr) => prev + curr, 0);
+    .reduce((prev, curr) => prev + curr, 0)
 
-  return reduction([...sums, sum], checkSpecial);
-};
+  return reduction([...sums, sum], checkSpecial)
+}

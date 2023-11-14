@@ -1,7 +1,7 @@
-import { BirthStamp } from '../types';
-import { sumAllConsonants } from './sum-all.consonants';
-import { reduction } from './reduction';
-import { sumAll } from './sum-all';
+import { BirthStamp } from '../types'
+import { sumAllConsonants } from '../arithmetics/sum-all.consonants'
+import { reduction } from '../arithmetics/reduction'
+import { sumAll } from '../arithmetics/sum-all'
 
 /**
  * Personality
@@ -12,26 +12,26 @@ export const personality = ({
   father,
   mother,
 }: BirthStamp): number[] => {
-  const namesValues = sumAllConsonants(names);
+  const namesValues = sumAllConsonants(names)
 
   const fatherLastNames = father
     ? [
         father.firstLastName,
         ...(father.secondLastName ? [father.secondLastName] : []),
       ]
-    : [];
+    : []
 
   const motherLastNames = mother
     ? [
         mother.firstLastName,
         ...(mother.secondLastName ? [mother.secondLastName] : []),
       ]
-    : [];
+    : []
 
   namesValues.push(
     ...sumAllConsonants(fatherLastNames),
     ...sumAllConsonants(motherLastNames)
-  );
+  )
 
-  return reduction([sumAll(namesValues)]);
-};
+  return reduction([sumAll(namesValues)])
+}

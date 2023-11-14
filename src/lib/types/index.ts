@@ -1,2 +1,2 @@
-export * from './parent.identity';
-export * from './birth.stamp';
+export * from './parent.identity'
+export * from './birth.stamp'

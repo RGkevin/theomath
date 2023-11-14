@@ -1,4 +1,4 @@
 export interface ParentIdentity {
-  firstLastName: string;
-  secondLastName?: string;
+  firstLastName: string
+  secondLastName?: string
 }

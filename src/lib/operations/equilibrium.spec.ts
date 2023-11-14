@@ -1,6 +1,6 @@
-import { describe, expect } from 'vitest';
-import { BirthStamp } from '../types';
-import { equilibrium } from '@theomath/source';
+import { describe, expect } from 'vitest'
+import { BirthStamp } from '../types'
+import { equilibrium } from '@theomath/source'
 
 describe('Get the equilibrium of a Birth Stamp', () => {
   it('should get the equilibrium value for the given birth stamp', () => {
@@ -13,8 +13,8 @@ describe('Get the equilibrium of a Birth Stamp', () => {
         firstLastName: 'Valle',
       },
       date: new Date(),
-    };
-    const result = equilibrium(birthStamp);
-    expect(result).to.have.all.members([14, 5]);
-  });
-});
+    }
+    const result = equilibrium(birthStamp)
+    expect(result).to.have.all.members([14, 5])
+  })
+})

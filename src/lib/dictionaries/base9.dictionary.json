@@ -27,9 +27,7 @@
     "y",
     "z"
   ],
-  "vowels": [
-    "a", "e", "i", "o", "u"
-  ],
+  "vowels": ["a", "e", "i", "o", "u"],
   "digits": 9,
   "specials": [11, 22, 33]
 }

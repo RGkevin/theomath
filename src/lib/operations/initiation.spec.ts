@@ -1,6 +1,6 @@
-import { describe, expect } from 'vitest';
-import { BirthStamp } from '../types';
-import { initiation } from '@theomath/source';
+import { describe, expect } from 'vitest'
+import { BirthStamp } from '../types'
+import { initiation } from '@theomath/source'
 
 describe('Get the Initiation of a Birth Stamp', () => {
   it('should get the LifePath values for the given birth stamp', () => {
@@ -14,10 +14,10 @@ describe('Get the Initiation of a Birth Stamp', () => {
       },
       date: new Date('1992-05-15T15:15:00.000Z'),
       timeZone: 'America/Guatemala',
-    };
+    }
 
-    const result = initiation(birthStamp);
+    const result = initiation(birthStamp)
 
-    expect(result).to.have.all.members([2175, 15, 6]);
-  });
-});
+    expect(result).to.have.all.members([2175, 15, 6])
+  })
+})

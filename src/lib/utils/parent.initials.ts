@@ -1,4 +1,4 @@
-import { ParentIdentity } from '../types';
+import { ParentIdentity } from '../types'
 
 export const useParentInitials = ({
   firstLastName,
@@ -7,5 +7,5 @@ export const useParentInitials = ({
   return [
     firstLastName.charAt(0),
     ...(secondLastName ? [secondLastName.charAt(0)] : []),
-  ];
-};
+  ]
+}
