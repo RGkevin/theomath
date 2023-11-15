@@ -1,6 +1,6 @@
 import { cosmicMission } from './mission'
 import { BirthStamp } from '../types'
-import { soul } from './soul'
+import { soul } from './names'
 import { datetimeFormatConverter } from '../converters'
 import { reduction, sumAll } from '../arithmetics'
 

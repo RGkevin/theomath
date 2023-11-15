@@ -1,6 +1,6 @@
-import { BirthStamp } from '../types'
-import { datetimeFormatConverter } from '../converters'
-import { reduction } from '../arithmetics'
+import { BirthStamp } from '../../types'
+import { datetimeFormatConverter } from '../../converters'
+import { reduction } from '@theomath/source'
 
 /**
  * Strength Number:

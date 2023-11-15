@@ -1,5 +1,5 @@
-import { BirthStamp } from '../types'
-import { lettersConverter } from '../converters'
+import { BirthStamp } from '../../types'
+import { lettersConverter } from '../../converters'
 
 /**
  * Expression

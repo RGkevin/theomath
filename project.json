@@ -43,7 +43,7 @@
       "outputs": ["{options.reportsDirectory}"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "coverage/theomath",
+        "reportsDirectory": "coverage",
         "coverage": true
       }
     }

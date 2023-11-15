@@ -1,5 +1,5 @@
 import { describe, expect } from 'vitest'
-import { BirthStamp } from '../types'
+import { BirthStamp } from '../../types'
 import { lifePath } from '@theomath/source'
 
 describe('Get the Life Path of a Birth Stamp', () => {

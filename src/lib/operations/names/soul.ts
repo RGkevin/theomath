@@ -1,5 +1,5 @@
-import { BirthStamp } from '../types'
-import { reduction, sumAll, sumAllVowels } from '../arithmetics'
+import { BirthStamp } from '../../types'
+import { reduction, sumAll, sumAllVowels } from '../../arithmetics'
 
 /**
  * Soul Number:

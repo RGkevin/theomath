@@ -1,4 +1,4 @@
-import { BirthStamp } from '../types'
+import { BirthStamp } from '../../types'
 import { personality } from '@theomath/source'
 import { expect } from 'vitest'
 

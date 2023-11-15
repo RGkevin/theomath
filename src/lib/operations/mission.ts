@@ -1,6 +1,6 @@
 import { BirthStamp } from '../types'
-import { lifePath } from './life-path'
-import { expression } from './expression'
+import { lifePath } from './birthdate'
+import { expression } from './names'
 import { reduction } from '../arithmetics'
 
 /**

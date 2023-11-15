@@ -1,12 +1,13 @@
 {
   "name": "theomath",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "scripts": {
     "build": "nx build",
     "test": "nx test",
     "test:coverage": "nx test:coverage",
-    "serve": "nx test:watch"
+    "serve": "nx test:watch",
+    "serve:coverage": "http-server -o ./coverage"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -27,6 +28,7 @@
     "@vitest/ui": "~0.32.0",
     "eslint": "~8.46.0",
     "eslint-config-prettier": "^9.0.0",
+    "http-server": "^14.1.1",
     "nx": "17.0.3",
     "prettier": "^2.6.2",
     "typescript": "~5.1.3",

@@ -1,6 +1,6 @@
-import { BirthStamp } from '../types'
-import { reduction, sumAll } from '../arithmetics'
-import { datetimeFormatConverter } from '../converters'
+import { BirthStamp } from '../../types'
+import { reduction, sumAll } from '../../arithmetics'
+import { datetimeFormatConverter } from '../../converters'
 
 /**
  * Life Path

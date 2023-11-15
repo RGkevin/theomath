@@ -1,5 +1,5 @@
 import { describe, expect } from 'vitest'
-import { BirthStamp } from '../types'
+import { BirthStamp } from '../../types'
 import { equilibrium } from '@theomath/source'
 
 describe('Get the equilibrium of a Birth Stamp', () => {
@@ -13,6 +13,7 @@ describe('Get the equilibrium of a Birth Stamp', () => {
         firstLastName: 'Valle',
       },
       date: new Date(),
+      timeZone: 'America/Guatemala',
     }
     const result = equilibrium(birthStamp)
     expect(result).to.have.all.members([14, 5])
